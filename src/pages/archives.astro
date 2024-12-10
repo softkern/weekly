@@ -4,7 +4,7 @@ import BaseLayout from '@layouts/BaseLayout.astro'
 import { fetchWeeklyByYear } from '@utils/weekly'
 
 const weeklyByYear = await fetchWeeklyByYear()
-const years = weeklyByYear.keys()
+const years = Array.from(weeklyByYear.keys())
 ---
 
 <BaseLayout title="归档">
