@@ -1,10 +1,9 @@
 ---
-import { getCollection } from 'astro:content'
+import WeeklyCard from '@/components/WeeklyCard.astro'
 import TagComponent from '@components/Tag.astro'
 import BaseLayout from '@layouts/BaseLayout.astro'
 import { fetchTags, fetchWeekly } from '@utils/weekly'
 import type { GetStaticPaths } from 'astro'
-import WeeklyCard from '../../components/WeeklyCard.astro'
 
 export const getStaticPaths = (async () => {
   const weeklies = await fetchWeekly()

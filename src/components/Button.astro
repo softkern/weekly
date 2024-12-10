@@ -8,15 +8,7 @@ interface Props {
   target?: string
 }
 
-const {
-  href,
-  variant = 'primary',
-  size = 'md',
-  class: className,
-  disabled = false,
-  target = '_self',
-  ...rest
-} = Astro.props
+const { href, variant = 'primary', size = 'md', class: className, target = '_self' } = Astro.props
 
 const variants = {
   primary: 'bg-blue-500 text-white hover:bg-blue-600',

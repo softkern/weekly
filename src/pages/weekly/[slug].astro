@@ -1,7 +1,7 @@
 ---
+import WeeklyLayout from '@layouts/WeeklyLayout.astro'
 import { fetchWeekly } from '@utils/weekly'
 import type { GetStaticPaths } from 'astro'
-import WeeklyLayout from '../../layouts/WeeklyLayout.astro'
 
 export const getStaticPaths = (async () => {
   const weeklies = await fetchWeekly()
